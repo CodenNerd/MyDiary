@@ -1,0 +1,79 @@
+		.grey{
+			background-color: rgb(250,250,250);
+		}
+		html, body{
+			margin:0px;
+			padding: 0px;
+			font-family: Calibri, Verdana, Times New Roman;
+			color: dimgrey;
+		}
+		#container{
+			min-height: 700px; 
+			max-width: 1000px; 
+			border-left: 1px double lightgrey;
+			border-right: 1px double lightgrey;
+			padding-bottom: 20px; 
+
+		}
+		#container>div input, #container>q input, #container>q textarea{
+			margin: 20px auto;
+			padding: 5px;
+			width:100%;
+			line-height: 30px;
+			transition: 2s;
+			border:1px solid lightgrey;
+			background-color: #F8F8F8;
+			color: lightgrey;
+			resize: none;
+		}
+		#container>div input:focus, #container>q input:focus, #container>q textarea:focus{
+			background-color: white;
+			color: black;
+			outline: none;
+			border-radius: 5px;
+		}
+		#container>div button, #container>q button{
+			width: 102%;
+			height: 50px;
+		}
+		#container>div{
+			margin: 100px auto;
+			border:1px solid lightgrey;
+			border-radius: 10px;
+			width:60%;
+			padding: 20px;
+		}
+		#container>h2{
+			margin-top:100px auto;  
+		}
+		.underline{
+			border-bottom: 1px solid lightgrey;
+			display: inline-block;
+			padding-bottom: 5px;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		.enabled{
+			background-color: green;
+			border-radius: 5px;
+			border:1px solid green;
+			color: white;
+			transition: 1s;
+		}
+		.enabled:hover{
+			background-color: white;
+			color: green;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		label span{
+			color: red;
+			text-align: right;
+			width:40%;
+			margin-left: -40%;
+			display: inline-block;
+			float: right;
+		}
+		.italicize{
+			font-style: italic;
+		}
