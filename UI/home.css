@@ -75,6 +75,8 @@
 			display: none;
 		}
 
+		/* collapsible styles adapted from alligator.io with modifications */
+
 		.lbl-toggle {
 			display: block;
 

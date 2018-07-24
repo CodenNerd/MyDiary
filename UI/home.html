@@ -2,16 +2,25 @@
 <html>
 <head>
 	<title>Welcome to MyDiary</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<script type="text/javascript" src="home.js">
 	</script>
+	<style type="text/css">
+		
+	</style>
 </head>
 <body>
+	<div class="nav"><a href="index.html"><span>My<strong>Diary</strong></span></a>
+		<ul>
+			<a href="signup.html"><li>Sign Up</li></a>
+			<a href="signin.html"><li>Sign In</li></a>
+		</ul>
+	</div>
 	<center><div id="container" class="grey">
 		<br>
 		<h3>User's Diary @MyDiary.com <small><a href="index.html">Sign Out</a></small></h3>
 		<br/>
-		<h2 class="underline">Add an Entry to MyDiary Here</h2>
 		<q>
 
 			<div class="rightHalf">
@@ -171,15 +180,7 @@
 					</div>
 				</div>
 
-				<div>
-				<h2 class="underline">Wish List Entries</h2>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-			</div>
-			</div>
+				</div>
 			
 			<div class="entryInput">
 				<form>
@@ -192,16 +193,7 @@
 				</form>
 			</div>
 			
-			<div class="entryInput">
-			<h2 class="underline">Add to Wish List Here </h2>
-			<form>
-				<label>Date:<input type="date" name="date"></label>
-				<label>To-do:<input type="text" name="todo"></label>
-				<button type="submit" name="todoButton">+ Add to Wish List</button>
-			</form>
-
-		</div>
-		</q>
+			</q>
 		<a href="account.html"><button id="goToProfileButton">View Account Information</button></a>
 	</center>
 </body>
