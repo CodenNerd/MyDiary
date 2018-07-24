@@ -2,13 +2,25 @@
 <html>
 <head>
 	<title>Create A MyDiary Account</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		#center-div{
+			margin-top: 30px;
+			opacity: 0.9;
+		}
+	</style>
 </head>
 <body>
- <center><div id="container" class="grey">
-		<br><br>
-		<h2 class="underline">Welcome to MyDiary</h2>
-		<div>
-			<h3 class="underline">Sign Up Here</h3>
+
+	<div class="nav"><a href="index.html"><span>My<strong>Diary</strong></span></a>
+		<ul>
+			<a href="signin.html"><li>Sign In Instead?</li></a>
+		</ul>
+	</div>
+
+	<center><div id="center-div">
+		<h3 class="underline">Sign Up Here</h3>
 			<form name="signup-form" action="home.html">
 				<label>Name:<span></span> <input id="signup-name" type="text" name="signup-name" oninput="inputValidation('signup-name')" required></label>
 				<br>
@@ -18,8 +30,8 @@
 				<br>
 				<button name="signup-button" class="" type="submit" disabled>Sign Up</button>
 			</form>
-		</div>
+	</div></center>
 
-		</div></center> 
-</body>
+
+ </body>
 </html>

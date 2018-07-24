@@ -1,3 +1,7 @@
+		label span{
+			text-align: right;
+			float: right;
+		}
 		div:not(.not){
 			min-height: 200px;
 			border-top: 1px dotted lightgrey;

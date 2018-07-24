@@ -33,10 +33,12 @@ let validFields = [];
 			//use isValid instead // also check for string length
 			if(isValid==false){
 				getInputField('signup-form',fieldName).style.border = "1px solid red";
+				getInputField('signup-form',fieldName).style.backgroundColor = "#330000";
 				getInputField('signup-form',fieldName).previousElementSibling.innerHTML = message;
 			}
 			else{
 				getInputField('signup-form',fieldName).style.border = "1px solid green";
+				getInputField('signup-form',fieldName).style.backgroundColor = "#006633";
 				message = "";
 				getInputField('signup-form',fieldName).previousElementSibling.innerHTML = message;
 			}
