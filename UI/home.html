@@ -10,24 +10,26 @@
 		
 		</style>
 		<script type="text/javascript">
-			let displayTooltip = () =>{
-				document.getElementsByClassName('tooltip')[0].style.visibility = "visible";
-			}
-			let unshowTooltip = () =>{
-				document.getElementsByClassName('tooltip')[0].style.visibility = "hidden";
-			}
+			let displayTooltip = () => document.getElementsByClassName('tooltip')[0].style.visibility = "visible";
+			
+			let unshowTooltip = () => document.getElementsByClassName('tooltip')[0].style.visibility = "hidden";
+
+			let showModal = () => document.getElementById('modal').style.display = "inline-block";
+
+			let hideModal = () => document.getElementById('modal').style.display = "none";
+
 		</script>
 </head>
 <body class="loggedIn">
 	<div class="nav"><a href="index.html">User's Diary @ <span>My<strong>Diary</strong></span></a>
 		<ul>
-			<a href="#" onmouseover="displayTooltip()" onmouseout="unshowTooltip()"><li><b>+</b></li></a>
+			<a href="#" onmouseover="displayTooltip()" onmouseout="unshowTooltip()" onclick="showModal()"><li><b>+</b></li></a>
 			<a href="account.html"><li>Account Info</li></a>
 			<a href="index.html"><li>Sign Out</li></a>
 		</ul>
 	</div>
 	<div class="tooltip">Click the plus sign to add an entry to your diary</div>
-	<center><div class="container-div">
+	<center onclick="hideModal()"><div class="container-div">
 				<h2 class="underline">View of Entries</h2>
 				<br>
 <!-- codes for collapsibles were adapted from www.alligator.io -->
@@ -187,7 +189,7 @@
 				
 			
 			<div id="modal">
-				<a href="#">x</a>
+				<a href="#" onclick="hideModal()">x</a>
 				<br><br>
 				<form>
 					<label>Date<input id="entryDate" type="text" name="entryDate" value="Today" placeholder="Today" disabled> </label>

@@ -176,7 +176,7 @@
 			top:10px;
 			left: 25%;
 			opacity: 0.9;
-			//display: none;
+			display: none;
 		}
 		#modal>a{
 			float:right;
