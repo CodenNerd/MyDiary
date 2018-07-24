@@ -7,17 +7,7 @@
 	<script type="text/javascript" src="home.js">
 	</script>
 	<style type="text/css">
-		.tooltip{
-			position: relative;
-			top:0px;
-			right:0px;
-			background-color: darkgreen;
-			padding: 5px 20%;
-			color: white;
-			text-align: right;
-			transition: 5s;
-			visibility: hidden;
-			}
+		
 		</style>
 		<script type="text/javascript">
 			let displayTooltip = () =>{
@@ -40,7 +30,7 @@
 	<center><div class="container-div">
 				<h2 class="underline">View of Entries</h2>
 				<br>
-
+<!-- codes for collapsibles were adapted from www.alligator.io -->
 				<div class="wrap-collabsible not">
 					<input id="collapsible1" class="toggle" type="checkbox">
 					<label for="collapsible1" class="lbl-toggle" tabindex="0">...Summary<span class="dateView">Today</span></label>
@@ -196,14 +186,16 @@
 
 				
 			
-			<div class="modal">
+			<div id="modal">
+				<a href="#">x</a>
+				<br><br>
 				<form>
 					<label>Date<input id="entryDate" type="text" name="entryDate" value="Today" placeholder="Today" disabled> </label>
 					<label>Entry Topic<input id="entrySummary" type="text" name="entrySummary" placeholder="Summary of the entry..."></label>
 					<br>
 					<label>Entry Detail<textarea id="entryDetail" placeholder="What's on your mind?" name="entryDetail"></textarea></label>
 					<br>
-					<button id="entrySubmit" type="submit" name="entrySubmit">Submit Entry</button>
+					<button id="entrySubmit" type="submit" name="entrySubmit">Save</button>
 				</form>
 			</div>
 			
