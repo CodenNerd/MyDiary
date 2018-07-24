@@ -153,19 +153,6 @@
 			border-bottom-right-radius: 7px;
 			padding: .5rem 1rem;
 		}
-		.wishlist{
-			width: 90%;
-			max-height: 50px;
-			display: inline-block;
-			border: 1px solid cadetblue;
-			text-align: left;
-			padding: 1%;
-		}
-		.wishlist span{
-			border-right: 1px solid lightgrey;
-			padding-right: 2%;
-			margin-right: 2%; 
-		}
 		#modal{
 			border: 1px solid lightgrey;
 			background: white;
@@ -177,6 +164,9 @@
 			left: 25%;
 			opacity: 0.9;
 			display: none;
+			z-index: +3;
+			z-index: +1;
+			z-index: +3;
 		}
 		#modal>a{
 			float:right;

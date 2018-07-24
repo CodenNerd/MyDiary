@@ -61,7 +61,7 @@ let validFields = [];
 			}
 			else{
 				getInputField('signup-form','signup-button').disabled = "disabled";
-				getInputField('signup-form','signup-button').className = "";
+				getInputField('signup-form','signup-button').className = "disabled";
 			}
 
 		}

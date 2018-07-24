@@ -12,13 +12,11 @@
 		.nav{
 			background-color: black;
 			//opacity: 0.5;
-			min-height: 30px;
+			min-height: 50px;
 			transition: 2s;
-			padding-top: 20px;
-			padding-bottom: 20px;
-		}
+			}
 		.nav:hover{
-			background:#180000;
+			opacity: 0.9;
 		}
 		.nav ul{
 			position: absolute;
@@ -26,7 +24,7 @@
 			right: 0px;
 			margin:5px;
 			margin-right: 5%;
-			padding: 0px;
+			padding: 10px;
 		}
 		.nav ul li{
 			background-color: #202020;
@@ -34,13 +32,18 @@
 			list-style-type: none;
 			padding: 5px 25px;
 			transition: 0.5s;
-			margin: 20px 0 20px 0;
+			padding: 16px 25px; 
+
 
 		}
 		.nav ul li:hover{
 			background-color: darkgreen;
 			color: white;
 			cursor: pointer;
+		}
+		.nav>ul>a{
+			margin: 0px;
+			padding: 0px;
 		}
 		a{
 			text-decoration: none;
@@ -49,9 +52,11 @@
 		}
 		.nav>a>span{
 			color: lightgrey;
-			font-size: 20px;
-			margin-left: 5px;
-		}
+			font-size: 20px;			
+			margin:auto 20px;
+			display: inline-block;
+			padding-top: 10px;
+				}
 		#center-div{
 			background-color: black;
 			opacity: 0.8;
@@ -84,22 +89,21 @@
 			opacity: 1;
 		}
 		.enabled{
-			background-color:white;
+			background-color:green;
 			border-radius: 5px;
 			border:1px solid green;
-			color: green;
+			color: white;
 			transition: 1s;
 		}
 		.enabled:hover{
-			background-color: green;
-			color: white;
+			background-color: white;
+			color: green;
 			font-weight: bold;
 			cursor: pointer;
 		}
 		button{
 			width:102%;
-			height:40px;
-			color: 
+			height:40px;			 
 		}
 		.underline{
 			border-bottom: 1px solid lightgrey;
@@ -137,6 +141,10 @@
 		}
 		.italicize{
 			font-style: italic;
+		}
+		.disabled{
+			background-color: darkgreen;
+			border:1px solid green;
 		}
 
 
