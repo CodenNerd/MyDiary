@@ -7,23 +7,32 @@
 	<script type="text/javascript" src="home.js">
 	</script>
 	<style type="text/css">
-		
+		.tooltip{
+			position: relative;
+			top:0px;
+			right:0px;
+			background-color: orange;
+			padding: 5px 20%;
+			color: white;
+			text-align: right;
+			transition: 2s;
+			visibility: hidden; 
+		}
+		.plus:hover{
+			
+		}
 	</style>
 </head>
-<body>
-	<div class="nav"><a href="index.html"><span>My<strong>Diary</strong></span></a>
+<body class="loggedIn">
+	<div class="nav"><a href="index.html">User's Diary @ <span>My<strong>Diary</strong></span></a>
 		<ul>
-			<a href="signup.html"><li>Sign Up</li></a>
-			<a href="signin.html"><li>Sign In</li></a>
+			<a href="#" class="plus"><li><b>+</b></li></a>
+			<a href="account.html"><li>Account Info</li></a>
+			<a href="index.html"><li>Sign Out</li></a>
 		</ul>
 	</div>
-	<center><div id="container" class="grey">
-		<br>
-		<h3>User's Diary @MyDiary.com <small><a href="index.html">Sign Out</a></small></h3>
-		<br/>
-		<q>
-
-			<div class="rightHalf">
+	<div class="tooltip">Click to add an entry to your diary</div>
+	<center><div class="container-div">
 				<h2 class="underline">View of Entries</h2>
 				<br>
 
@@ -180,7 +189,7 @@
 					</div>
 				</div>
 
-				</div>
+				
 			
 			<div class="entryInput">
 				<form>
@@ -193,8 +202,8 @@
 				</form>
 			</div>
 			
-			</q>
-		<a href="account.html"><button id="goToProfileButton">View Account Information</button></a>
+			
+		</div>
 	</center>
 </body>
 </html>

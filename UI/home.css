@@ -1,34 +1,4 @@
-		label span{
-			text-align: right;
-			float: right;
-		}
-		div:not(.not){
-			min-height: 200px;
-			border-top: 1px dotted lightgrey;
-			border: 1px dotted lightgrey;
-			border-right: 1px dotted lightgrey;
-			padding: 3%;
-		} 
-		.entryInput{
-			margin-right: 50%;
-			overflow-x: ;
-		}
-		#entryDate{
-			width: 20%;
-			margin: 10px 2%;
-		}
-		#entrySummary{
-			width: 50%;
-			margin: 10px 2%;
-		}
-		.rightHalf{
-			width:40%;
-			float: right;
-		}
-		q::after , q::before{
-			display: none;
-		}
-		.summaryView, .dateView{
+.summaryView, .dateView{
 			display: inline-block;
 			//margin: 5% 2%;
 			//background-color: #F8F8F8;
@@ -40,9 +10,37 @@
 		.dateView{
 			width: 25%;
 		}
+		body{
+			margin: 0px;
+			font-family: Calibri, Verdana;
+		}
 		.summaryView{
 			width: 50%;			
 		}
+
+		.container-div{
+			max-width:60%;
+			color: grey;
+		}
+
+/*		
+		div:not(.not){
+			min-height: 200px;
+			border-top: 1px dotted lightgrey;
+			border: 1px dotted lightgrey;
+			border-right: 1px dotted lightgrey;
+			padding: 3%;
+		} 
+		
+		.rightHalf{
+			width:40%;
+			float: right;
+		}
+		q::after , q::before{
+			display: none;
+		}
+		
+		
 		.rightHalf>.underline{
 			margin-top: -25px;
 		}
@@ -66,6 +64,9 @@
 			overflow-x: auto; 
 		}
 
+*/
+		/* collapsible styles adapted from alligator.io with modifications */
+
 
 		.wrap-collabsible {
 			margin-bottom: 20px;
@@ -75,7 +76,6 @@
 			display: none;
 		}
 
-		/* collapsible styles adapted from alligator.io with modifications */
 
 		.lbl-toggle {
 			display: block;

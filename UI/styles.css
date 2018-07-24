@@ -1,8 +1,9 @@
 
-		body{
+		body:not(.loggedIn){
 			background-color: cadetblue;
 			background-image: url("images/bg.jpg");
 			background-repeat: no-repeat;
+			background-attachment: fixed;
 			background-position: center;
 			background-size: 100%;
 			margin: 0px;
