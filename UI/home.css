@@ -164,9 +164,6 @@
 			left: 25%;
 			opacity: 0.9;
 			display: none;
-			z-index: +3;
-			z-index: +1;
-			z-index: +3;
 		}
 		#modal>a{
 			float:right;
