@@ -1,4 +1,4 @@
-//collapsible js code from www.alligator.io
+//Collapsible js code from www.alligator.io
 let myLabels = document.querySelectorAll('.lbl-toggle');
 
 		Array.from(myLabels).forEach(label => {
