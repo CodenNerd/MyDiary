@@ -13,10 +13,11 @@ let myLabels = document.querySelectorAll('.lbl-toggle');
 		});
 
 
-let displayTooltip = () => document.getElementsByClassName('tooltip')[0].style.visibility = "visible";
+			let displayTooltip = () => document.getElementsByClassName('tooltip')[0].style.visibility = "visible";
 			
 			let unshowTooltip = () => document.getElementsByClassName('tooltip')[0].style.visibility = "hidden";
 
 			let showModal = () => document.getElementById('modal').style.display = "inline-block";
 
 			let hideModal = () => document.getElementById('modal').style.display = "none";
+

@@ -1,4 +1,4 @@
-.summaryView, .dateView{
+		.summaryView, .dateView{
 			display: inline-block;
 			//margin: 5% 2%;
 			//background-color: #F8F8F8;
@@ -24,7 +24,7 @@
 		}
 		.tooltip{
 			position: relative;
-			top:0px;
+			top:50px;
 			right:0px;
 			background-color: darkgreen;
 			padding: 5px 20%;
@@ -34,48 +34,6 @@
 			visibility: hidden;
 			}
 
-/*		
-		div:not(.not){
-			min-height: 200px;
-			border-top: 1px dotted lightgrey;
-			border: 1px dotted lightgrey;
-			border-right: 1px dotted lightgrey;
-			padding: 3%;
-		} 
-		
-		.rightHalf{
-			width:40%;
-			float: right;
-		}
-		q::after , q::before{
-			display: none;
-		}
-		
-		
-		.rightHalf>.underline{
-			margin-top: -25px;
-		}
-		#goToProfileButton{
-			width: 100%;
-			background-color: cadetblue;
-			border:1px solid grey;
-			color: white;
-			border-radius: 5px;
-			transition: 0.5s;
-			margin: 30px auto;
-			padding: 30px auto;
-			font-weight: bold;
-		}
-		#goToProfileButton:hover{
-			background-color: white;
-			border:1px solid cadetblue;
-			color: cadetblue;
-		}
-		span{
-			overflow-x: auto; 
-		}
-
-*/
 		/* collapsible styles adapted from alligator.io with modifications */
 
 
@@ -160,10 +118,11 @@
 			width: 50%;
 			border-radius: 5px;
 			position: fixed;
-			top:10px;
+			top:40px;
 			left: 25%;
 			opacity: 0.9;
 			display: none;
+			z-index: +2;
 		}
 		#modal>a{
 			float:right;
