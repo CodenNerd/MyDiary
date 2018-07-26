@@ -1,0 +1,156 @@
+
+		body:not(.loggedIn){
+			background-color: cadetblue;
+			background-image: url("../images/bg.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			margin: 0px;
+			font-family: Calibri, Verdana;
+		}
+		.nav{
+			background-color: black;
+			//opacity: 0.5;
+			min-height: 50px;
+			transition: 2s;
+			position: fixed;
+			top:0;
+			left:0;
+			width:100%;
+			z-index: +1;
+			}
+		.nav:hover{
+			opacity: 0.9;
+		}
+		.nav ul{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			margin:5px;
+			margin-right: 5%;
+			padding: 10px;
+		}
+		.nav ul li{
+			background-color: #202020;
+			display: inline;
+			list-style-type: none;
+			padding: 5px 25px;
+			transition: 0.5s;
+			padding: 16px 25px; 
+
+
+		}
+		.nav ul li:hover{
+			background-color: darkgreen;
+			color: white;
+			cursor: pointer;
+		}
+		.nav>ul>a{
+			margin: 0px;
+			padding: 0px;
+		}
+		a{
+			text-decoration: none;
+			font-weight: bolder;
+			color: lightgrey;
+		}
+		.nav>a>span{
+			color: lightgrey;
+			font-size: 20px;			
+			margin:auto 20px;
+			display: inline-block;
+			padding-top: 10px;
+				}
+		#center-div{
+			background-color: black;
+			opacity: 0.8;
+			border: 1px solid black;
+			border-radius: 5px;
+			max-width: 700px;
+			margin-top: 150px;
+			color: lightgrey;
+			padding-top: 50px;
+			padding-bottom: 100px;
+			padding-right: 5%;
+			padding-left: 5%;
+
+		}
+		#center-div>a>button{
+			height: 50px; 
+			background-color: white;
+			color: green;
+			outline: none;
+			cursor: pointer;
+			width: 80%;
+			border: 1px solid white;
+			font-weight: bold;
+			border-radius: 2px;
+			transition: 0.5s;
+		}
+		#center-div>a>button:hover{
+			background-color: black;
+			color: white;
+			opacity: 1;
+		}
+		.enabled{
+			background-color:green;
+			border-radius: 5px;
+			border:1px solid green;
+			color: white;
+			transition: 1s;
+		}
+		.enabled:hover{
+			background-color: white;
+			color: green;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		button{
+			width:102%;
+			height:40px;			 
+		}
+		.underline{
+			border-bottom: 1px solid lightgrey;
+			display: inline-block;
+			padding-bottom: 5px;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		input,textarea{
+			margin: 20px auto;
+			padding: 5px;
+			width:100%;
+			line-height: 30px;
+			transition: 2s;
+			border:1px solid lightgrey;
+			background-color: #F8F8F8;
+			color: lightgrey;
+			resize: none;
+			outline: none;
+			opacity: 1;
+		}
+		label span{
+			color: red;
+			text-align: right;
+			width:40%;
+			margin-left: -40%;
+			display: inline-block;
+			float: right;
+		}
+		input:focus,textarea:focus{
+			background-color: white;
+			color: black;
+			outline: none;
+			border-radius: 5px;
+		}
+		.italicize{
+			font-style: italic;
+		}
+		.disabled{
+			background-color: darkgreen;
+			border:1px solid green;
+		}
+
+
+
