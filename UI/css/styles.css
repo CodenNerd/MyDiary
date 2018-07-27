@@ -1,6 +1,20 @@
 
+		@keyframes bg-slide{
+			1%,25%{
+				background-image: url("../images/bg2.jpg");					
+			}
+			26%,50%{
+				background-image: url("../images/bg3.jpg")
+			}
+			51%,75%{
+				background-image: url("../images/bg.jpg")
+			}
+			76%,100%{
+				background-image: url("../images/bg4.jpg")			
+			}
+		}
 		body:not(.loggedIn){
-			background-color: cadetblue;
+			background-color: grey;
 			background-image: url("../images/bg.jpg");
 			background-repeat: no-repeat;
 			background-attachment: fixed;
@@ -8,10 +22,11 @@
 			background-size: cover;
 			margin: 0px;
 			font-family: Calibri, Verdana;
+			animation: bg-slide 60s cubic-bezier(0, 0, 0, 0) 0s infinite forwards;
 		}
 		.nav{
 			background-color: black;
-			//opacity: 0.5;
+		/*	opacity: 0.5;	*/
 			min-height: 50px;
 			transition: 2s;
 			position: fixed;
@@ -19,7 +34,7 @@
 			left:0;
 			width:100%;
 			z-index: +1;
-			}
+		}
 		.nav:hover{
 			opacity: 0.9;
 		}
