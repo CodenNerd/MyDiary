@@ -4,10 +4,10 @@
 				background-image: url("../images/bg2.jpg");					
 			}
 			26%,50%{
-				background-image: url("../images/bg3.jpg")
+				background-image: url("../images/bg.jpg")
 			}
 			51%,75%{
-				background-image: url("../images/bg.jpg")
+				background-image: url("../images/bg3.jpg")
 			}
 			76%,100%{
 				background-image: url("../images/bg4.jpg")			
