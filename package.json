@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/CodenNerd/MyDiary.git"
   },
-  "author": "",
+  "author": "AbdulAzeez Atanda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CodenNerd/MyDiary/issues"
@@ -18,5 +18,16 @@
   "homepage": "https://github.com/CodenNerd/MyDiary#readme",
   "dependencies": {
     "express": "^4.16.3"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "mocha": "^5.2.0"
+  },
+  "keywords": [
+    "diary",
+    "experiences",
+    "api"
+  ]
 }
