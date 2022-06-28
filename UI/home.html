@@ -2,23 +2,29 @@
 <html>
 <head>
 	<title>Welcome to MyDiary</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
-	<script type="text/javascript" src="home.js">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script type="text/javascript" src="js/home.js">
 	</script>
+	<style type="text/css">
+		
+		</style>
+		<script type="text/javascript" src="js/home.js"></script>
 </head>
-<body>
-	<center><div id="container" class="grey">
-		<br>
-		<h3>User's Diary @MyDiary.com <small><a href="index.html">Sign Out</a></small></h3>
-		<br/>
-		<h2 class="underline">Add an Entry to MyDiary Here</h2>
-		<q>
-
-			<div class="rightHalf">
+<body class="loggedIn">
+	<div class="nav"><a href="index.html">User's Diary @ <span>My<strong>Diary</strong></span></a>
+		<ul>
+			<a href="#" onmouseover="displayTooltip()" onmouseout="unshowTooltip()" onclick="showModal()"><li><b>+</b></li></a>
+			<a href="account.html"><li>Account Info</li></a>
+			<a href="index.html"><li>Sign Out</li></a>
+		</ul>
+	</div>
+	<div class="tooltip">Click the plus sign to add an entry to your diary</div>
+	<br><br>
+	<center><div class="container-div">
 				<h2 class="underline">View of Entries</h2>
 				<br>
-
+<!-- codes for collapsibles were adapted from www.alligator.io -->
 				<div class="wrap-collabsible not">
 					<input id="collapsible1" class="toggle" type="checkbox">
 					<label for="collapsible1" class="lbl-toggle" tabindex="0">...Summary<span class="dateView">Today</span></label>
@@ -30,8 +36,9 @@
 								● You are to create a pull request to elicit review and feedback for the UI template when
 								you are done working on them
 								● Do not use any css frameworks e.g bootstrap, materialize .
-								● Do not download or use an already built website template.
+								● Do not download or use an already built website template. 
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible1');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -49,6 +56,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible2');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -66,6 +74,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible3');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -83,6 +92,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible4');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -100,6 +110,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible5');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -117,6 +128,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible6');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -134,6 +146,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible7');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -151,6 +164,7 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible8');" >| delete |</a>
 						</div>
 					</div>
 				</div>
@@ -168,42 +182,28 @@
 								● Do not use any css frameworks e.g bootstrap, materialize .
 								● Do not download or use an already built website template.
 							</p>
+							<a href="#" onclick="showModal(); modalContent();">| edit |</a> &nbsp; &nbsp; &nbsp;  <a href="#" onclick="removeEntry('collapsible9');" >| delete |</a>
 						</div>
 					</div>
 				</div>
 
-				<div>
-				<h2 class="underline">Wish List Entries</h2>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-				<span class="wishlist"><span>DD/MM/YYYY</span> To-do entry</span>
-			</div>
-			</div>
+				
 			
-			<div class="entryInput">
-				<form>
+			<div id="modal">
+				<a href="#" onclick="hideModal()">x</a>
+				<br><br>
+				<form name="modalForm">
 					<label>Date<input id="entryDate" type="text" name="entryDate" value="Today" placeholder="Today" disabled> </label>
 					<label>Entry Topic<input id="entrySummary" type="text" name="entrySummary" placeholder="Summary of the entry..."></label>
 					<br>
 					<label>Entry Detail<textarea id="entryDetail" placeholder="What's on your mind?" name="entryDetail"></textarea></label>
 					<br>
-					<button id="entrySubmit" type="submit" name="entrySubmit">Submit Entry</button>
+					<button id="entrySubmit" type="submit" name="entrySubmit">Save</button>
 				</form>
 			</div>
 			
-			<div class="entryInput">
-			<h2 class="underline">Add to Wish List Here </h2>
-			<form>
-				<label>Date:<input type="date" name="date"></label>
-				<label>To-do:<input type="text" name="todo"></label>
-				<button type="submit" name="todoButton">+ Add to Wish List</button>
-			</form>
-
+			
 		</div>
-		</q>
-		<a href="account.html"><button id="goToProfileButton">View Account Information</button></a>
 	</center>
 </body>
 </html>

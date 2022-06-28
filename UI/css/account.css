@@ -1,0 +1,27 @@
+		#container>div>div{
+			border:1px solid cadetblue;
+			border-radius: 3px;
+			background-color: ;
+			margin-top:2px;
+		}
+		.grey-bg{
+			border:1px solid grey;
+			color: dimgrey;
+			font-size: 20px;
+			text-align: left;
+			padding-left: 10px;
+			font-weight: bolder;
+		}
+		.grey-bg>span:first-child{
+			color:green;
+			display: inline-block;
+			margin-left: 20px;
+
+		} 
+		.grey-bg>span>a{
+			float: right;
+			color: lightgrey;
+			display: inline-block;
+			margin-right: 2%;
+			text-decoration: underline;
+		}
